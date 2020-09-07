@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Michael Reyner](https://up.htmlacademy.ru/htmlcss/29/user/81933).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza).
 
 ---
 
