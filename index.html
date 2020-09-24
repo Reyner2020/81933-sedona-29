@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html clss="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Седона - Небольшой городок в Аризоне</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-   <nav>
-    <a>
+<body class="page-body">
+  <header class="main-header">
+   <nav class="main-navigation">
+    <a class="main-header-logo">
      <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седона">	
    </a>
-   <ul>
+   <ul class="site-navigation">
      <li><a href="">Информация</a></li>
      <li><a href="">Фото и видео</a></li>
      <li><a href="">Карта штата</a></li>
      <li><a href="hotel.html">Гостиницы</a></li>
    </ul>
- </nav>	
+ </nav>
 </header>
 
-<main>
-  <img src="https://via.placeholder.com/1200x509" alt="Скалистые горы Седоны">
+<main class="container">
+  <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Скалистые горы Седоны">
   <h1>Седона — небольшой городок в Аризоне,  заслуживающий большего! </h1>
   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
   <section>
     <h2>Настоящий городок</h2>
-    <p>— №1 —</p>	
+    <p>— №1 —</p>
     <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-    <img src="https://via.placeholder.com/800x256" alt="причина 1">
+    <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Настоящее жилье">
   </section>
 
-  <section>
-    <ul>
-     <li>					
+  <section class="features">
+    <ul class="features-list">
+     <li class="features-item">
       <img src="img/icon-home.svg" width="75" height="72" alt="жилье">	
       <h2>Жильё</h2>
       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -48,19 +51,19 @@
       <h2>Сувениры</h2>
       <p>Не только китайского, но и местного производства!</p>
     </li>
-  </ul>	
+  </ul>
 </section>
 
 <section>
   <h2>Там есть  Мост<br> дьявола</h2>
   <p>— №2 —</p>
   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  <img src="https://via.placeholder.com/800x256" alt="Каменный мост Дьявола над пропастью">
+  <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Каменный мост Дьявола над пропастью">
 </section>
 
-<section> 
-  <ul>
-   <li>
+<section class="reasons">
+  <ul class="reasons-list">
+   <li class="reasons-item">
     <h2>небольшая площадь</h2>
     <p>— №3 — все достопримечательности находятся очень близко</p>
   </li>
@@ -76,25 +79,25 @@
 </ul>
 </section>
 
-<section>
+<section class="search-hotels">
   <h2>Заинтересовались?</h2>
-  <p>Укажите предполагаемые даты поездки,<br>
+  <p class="search-info">Укажите предполагаемые даты поездки,<br>
    и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-  <button>Поиск гостиницы в Седоне</button>
+  <button class="button">Поиск гостиницы в Седоне</button>
   <!-- Здесь будет форма поиска гостиниц -->
-  <img src="https://via.placeholder.com/1199x594" alt="Карта поиска гостиниц">
+  <img src="https://via.placeholder.com/1199x594" width="1199" height="594" alt="Карта поиска гостиниц">
 </section>
 </main>
 
-<footer>
- <section>
+<footer page-footer main-footer>
+ <section class="footer-contacts">
   <h2>Контакты</h2>
-  <p>#visitSEDONA<br>
-    Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
-  </p>
+  <p>#visitSEDONA</p>
+    Тел: <a class="footer-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+  
 </section>
 
-<section>
+<section class="footer-social">
   <h2>Мы в соцсетях</h2>
   <ul>
    <li><a href="https://twitter.com"><img src="img/icon-twitter.svg" width="46" height="48" alt="твиттер"></a></li>
@@ -103,9 +106,9 @@
  </ul>
 </section>
 
-<section>
-  <p>Разработано <a href="https://htmlacademy.ru"><img src="img/icon-htmlacademy.svg" width="115" height="41" alt="HTML Acedemy"></a></p>
-</section>
+<div>
+  <p class="footer-copyright">Разработано <a class="button" href="https://htmlacademy.ru"><img src="img/icon-htmlacademy.svg" width="115" height="41" alt="HTML Acedemy"></a></p>
+</div>
 </footer>
 
 </body>
