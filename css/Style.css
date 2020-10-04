@@ -1,7 +1,10 @@
 :root {
   --basic-white: #ffffff;
+  --basic-normal-black: #333333;
   --basic-black: #000000;
   --basic-blue: #81B3D2;
+  --basic-blue-hover: #669EC0;
+  --basic-blue-action: #5496BD;
   --basic-blue-logo: #81B3D3;
   --basic-gray: #EEEEEE;
   --basic-brown: #766357;
@@ -19,7 +22,6 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -36,46 +38,52 @@ img {
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
-  color: var(--basic-white);
-  background-color: transparent;
+  color: var(--basic-black);
 }
 
 .site-navigation {
   list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-black);
-}
 
 /* User navigation */
 
 
-.site-navigation a,
-.user-navigation a {
-  color: var(--basic-white);
+.site-navigation a {
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:focus {
   background-color: var(--basic-extra-dark);
 }
 
 /* Features */
 
+
 .features-list {
   list-style: none;
 }
 
-.feature-item {
+.features-item {
   text-align: center;
 }
 
-.feature-item h2 {
+.features-item h2 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.features-item p {
+  color: var(--basic-normal-black);
+}
+
+
+/* Reasons */
+
+.reasons-list p {
+  color: var(--basic-normal-black);
+
 }
 
 /* Button */
@@ -84,16 +92,18 @@ img {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-black);
+  background-color: var(--basic-blue);
   border: none;
 }
 
 .button:hover,
-.button:focus,
+.button:focus {
+  background-color: var(--basic-blue-hover);
+}
+
 .button:active {
-  background-color: var(--basic-blue);
+  background-color: var(--basic-blue-action);
 }
 
 .button.disabled,
@@ -101,6 +111,10 @@ img {
   cursor: default;
   opacity: 0.5;
   background-color: var(--basic-blue);
+}
+
+.search  div{
+  background-color: var(--basic-brown);
 }
 
 /* Contacts */
