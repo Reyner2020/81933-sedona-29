@@ -13,23 +13,21 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
-        <div class="main-header-bar">
-          <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
-              <li><a href="">Информация</a></li>
-              <li><a href="">Фото и видео</a></li>
-              <li><a href="">Карта штата</a></li>
-              <li><a href="hotel.html">Гостиницы</a></li>
-            </ul>
-          </div>
-        </div>
+        <ul class="site-navigation">
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
     <main class="container">
-      <img src="img/gorge-sedona.jpg" width="1200" height="509" alt="Скалистые горы Седоны">
-      <img src="img/welcome-sedona.svg" width="456.65" height="350.88" alt="welcome sedona">
+      <div class="slide">
+        <img src="img/background-with-shape.jpg" width="1200" height="509" alt="Скалистые горы Седоны">
+        <img class="slick" src="img/welcome-sedona.svg" width="458" height="352" alt="welcome sedona">
+      </div>
       <div class="text-center">
-        <h1>Седона — небольшой городок в Аризоне,  заслуживающий большего! </h1>
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <section class="reason-one">
@@ -38,24 +36,28 @@
           <p>— №1 —</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="reason-one-image">
-          <img src="img/try-house.jpg" width="800" height="256" alt="Настоящее жилье">
-        </div>
+        <img src="img/try-house.jpg" width="800" height="256" alt="Настоящее жилье">
       </section>
       <section class="features">
         <ul class="features-list">
           <li class="features-item">
-            <img src="img/icon-home.svg" width="75" height="72" alt="жилье">
+            <svg width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M45.656 65.033H29.656V41.21H45.656V65.033ZM42.718 44.134H32.593V62.11H42.718V44.134Z" fill="#81B3D2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M72.771 39.253L74.847 37.185L64.939 27.32V0H51.127V13.567L37.5 0L0.151993 37.185L2.22899 39.253L10.061 31.458V69.076H6.12399V72H69.999V69.076H64.94V31.458L72.771 39.253ZM62.002 69.076H12.999V28.534L37.5 4.149L62.002 28.534V69.076ZM54.064 16.492L62.002 24.394V2.924H54.064V16.492Z" fill="#81B3D2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M37.656 34.7929C33.376 34.7929 29.906 31.3409 29.906 27.0799C29.906 22.8209 33.375 19.3669 37.656 19.3669C41.935 19.3669 45.406 22.8209 45.406 27.0799C45.406 31.3409 41.935 34.7929 37.656 34.7929ZM42.625 27.0799C42.625 24.3489 40.4 22.1349 37.656 22.1349C34.911 22.1349 32.686 24.3489 32.686 27.0799C32.686 29.8119 34.91 32.0279 37.656 32.0279C40.4 32.0279 42.625 29.8119 42.625 27.0799ZM17.061 41.2099H20.061V45.1289H17.061V41.2099ZM25.999 41.2099H22.999V45.1289H25.999V41.2099ZM17.061 47.1819H20.061V51.1009H17.061V47.1819ZM25.999 47.1819H22.999V51.1009H25.999V47.1819ZM48.998 41.2099H51.998V45.1289H48.998V41.2099ZM57.936 41.2099H54.936V45.1289H57.936V41.2099ZM48.998 47.1819H51.998V51.1009H48.998V47.1819ZM57.936 47.1819H54.936V51.1009H57.936V47.1819Z" fill="#81B3D2"/>
+            </svg>
             <h2>Жильё</h2>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="features-item">
-            <img src="img/icon-food.svg" width="75" height="70" alt="еда">
+            <svg width="75" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.978 31.544h60.877c.041-.619.069-1.241.069-1.87 0-.393-.016-.78-.032-1.17v-.003C69.227 12.657 55.186 0 37.952 0 20.719 0 6.677 12.657 6.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zm12.979 10.921l-5.323-4.059-5.326 4.059-6.188-4.714 1.721-2.457 4.467 3.401 5.327-4.057 5.323 4.057 5.325-4.057 5.328 4.057 5.328-4.057 5.328 4.057 5.329-4.057 5.327 4.057 5.33-4.056 5.336 4.057 4.474-3.403 1.72 2.459-6.194 4.712-5.336-4.059-5.33 4.06-5.327-4.059-5.329 4.059-5.328-4.059-5.328 4.059-5.328-4.059-5.326 4.059zM5.051 46.71h65.803c2.274 0 4.134 1.94 4.134 4.313v3.504c0 2.372-1.861 4.313-4.135 4.313h-.93v1.053c0 5.536-4.342 10.065-9.648 10.065H15.629c-5.307 0-9.648-4.529-9.648-10.065V58.84h-.93c-2.274 0-4.135-1.941-4.135-4.313v-3.504c0-2.373 1.861-4.313 4.135-4.313zm55.225 20.205c3.711 0 6.73-3.15 6.73-7.021h-.001v-1.053H8.898v1.053c0 3.871 3.02 7.021 6.731 7.021h44.647zm11.795-12.388c0 .688-.558 1.271-1.218 1.271H5.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zm-5.098-26.026c-.671-14.142-13.43-25.458-29.021-25.458-15.591 0-28.348 11.316-29.021 25.458h58.042z" fill="#81B3D2"/><path d="M37.952 17.29c1.074 0 1.945-.909 1.945-2.03 0-1.121-.87-2.03-1.945-2.03-1.074 0-1.945.909-1.945 2.03 0 1.121.87 2.03 1.945 2.03zM30.172 12.26c1.075 0 1.946-.909 1.946-2.03 0-1.121-.871-2.03-1.946-2.03s-1.946.909-1.946 2.03c0 1.121.871 2.03 1.946 2.03zM45.732 12.26c1.075 0 1.946-.909 1.946-2.03 0-1.121-.871-2.03-1.946-2.03s-1.946.909-1.946 2.03c0 1.121.871 2.03 1.946 2.03z" fill="#81B3D2"/></svg>
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
-            <img src="img/icon-gift.svg" width="64" height="77" alt="сувениры">
+            <svg width="64" height="77" viewBox="0 0 64 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 23.501H36.312C50.125 16.602 51.229 12.25 50.72 9.816C49.558 5.853 45.028 2.793 40.718 4.409C35.149 6.498 33.581 14.797 32.074 20.796C30.15 14.726 28.29 6.982 23.938 3.059C22.677 1.921 20.843 0.794999 18.175 1.031C14.149 1.387 8.373 6.413 10.717 12.012C12.968 17.39 20.404 20.789 25.295 23.501H2.879C1.29355 23.5026 0.00715075 24.7846 0 26.37V37.692C0.00715075 39.2774 1.29355 40.5594 2.879 40.561H3.153V77H60.994V40.561H61.097C62.6828 40.5599 63.9698 39.2778 63.977 37.692V26.37C63.9698 24.7842 62.6828 23.5021 61.097 23.501ZM42.413 6.944C44.516 6.634 47.395 8.243 47.668 10.153C48.061 12.909 44.268 15.408 42.582 16.574C40.059 18.318 37.654 19.217 35.295 20.629C36.179 16.939 37.844 7.618 42.413 6.944ZM19.531 16.912C17.306 15.427 12.987 12.481 13.091 9.141C13.203 5.546 18.834 2.571 21.905 5.255C25.761 8.626 27.618 16.36 29.024 21.812C25.775 20.273 22.696 19.024 19.531 16.912ZM25.503 74.026H6.136V40.561H25.504V74.026H25.503ZM25.503 37.524H3.046V26.538H25.503V37.524ZM35.66 37.524V74.027H28.486V26.538H35.66V37.524ZM58.011 74.026H38.644V40.561H58.011V74.026ZM60.931 37.524H38.644V26.538H60.931V37.524Z" fill="#81B3D2"/>
+            </svg>
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -63,60 +65,60 @@
       </section>
       <section class="reason-two">
         <div class="reason-two-text">
-          <h2>Там есть  Мост<br> дьявола</h2>
+          <h2>Там есть Мост<br>дьявола</h2>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="reason-two-image">
-          <img src="img/gorge.jpg" width="800" height="256" alt="Каменный мост Дьявола над пропастью">
-        </div>
+        <img src="img/gorge.jpg" width="800" height="256" alt="Каменный мост Дьявола над пропастью">
       </section>
       <section class="reasons">
         <ul class="reasons-list">
           <li class="reasons-item">
             <h2>небольшая площадь</h2>
-            <p>— №3 — все достопримечательности находятся очень близко</p>
+            <p>— №3 —</p>
+            <p>все достопримечательности находятся очень близко</p>
           </li>
           <li class="reasons-item">
             <h2>красивая дорога</h2>
-            <p>— №4 — ехать в седону из лас-вегаса совсем
+            <p>— №4 —</p>
+            <p>ехать в седону из лас-вегаса совсем
             не скучно!</p>
           </li>
           <li class="reasons-item">
             <h2>мало туристов</h2>
-            <p>— №5 — большинство едет в гранд каньон и толпится там</p>
+            <p>— №5 —</p>
+            <p>большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="search-hotels">
         <h2>Заинтересовались?</h2>
         <p class="search-info">Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <h3>Поиск гостиницы в Седоне</h3>
         <form class="search-form" action="" method="post">
           <p class="search-item">
-            <label for="search-date">Дата заезда</label>
-            <input id="search-date" type="text" name="date" placeholder="24 апреля 2017">
+            <label for="search-date-in">Дата заезда:</label>
+            <input id="search-date-in" type="date" name="date" value="24 апреля 2017">
           </p>
           <p class="search-item">
-            <label class="search-date">Дата выезда</label>
-            <input id="search-time" type="text" name="date" placeholder="4 июля 2017">
+            <label for="search-date-out">Дата выезда:</label>
+            <input id="search-date-out" type="date" name="date" placeholder="4 июля 2017">
           </p>
-          <p class="search-item">
-            <label class="search-old">Взрослые:</label>
-            <input id="search-old" type="text" name="date" placeholder="2">
+          <p class="search-item-people">
+            <label for="search-old">Взрослые:</label>
+            <input id="search-old" type="number" name="old" placeholder="2">
           </p>
-          <p class="search-item">
-            <label class="search-child">Дети:</label>
-            <input id="search-child" type="text" name="date" placeholder="0">
+          <p class="search-item-people">
+            <label for="search-child">Дети:</label>
+            <input id="search-child" type="number" name="child" placeholder="0">
           </p>
-
           <button class="button" type="submit">Найти</button>
         </form>
       </section>
-        <div class="map">
-          <img src="img/map.jpg" width="1199" height="594" alt="Карта поиска гостиниц">
-        </div>
+      <div class="map">
+        <img src="img/map.jpg" width="1199" height="594" alt="Карта поиска гостиниц">
+      </div>
     </main>
     <footer class="page-footer main-footer">
       <div class="container">
@@ -126,9 +128,9 @@
         </section>
         <section class="footer-social">
           <ul class="social-button">
-            <li><a href="https://twitter.com"><img src="img/icon-twitter.svg" width="46" height="48" alt="твиттер"></a></li>
-            <li><a href="https://facebook.com"><img src="img/icon-fb.svg" width="46" height="48" alt="фейсбук"></a></li>
-            <li><a href="https://youtube.com"><img src="img/icon-youtube.svg" width="46" height="48" alt="ютуб"></a></li>
+            <li><a href="https://twitter.com"><img src="img/icon-twitter.svg" width="17" height="17" alt="твиттер"></a></li>
+            <li><a href="https://facebook.com"><img src="img/icon-fb.svg" width="12" height="22" alt="фейсбук"></a></li>
+            <li><a href="https://youtube.com"><img src="img/icon-youtube.svg" width="20" height="16" alt="ютуб"></a></li>
           </ul>
         </section>
         <p class="footer-copyright">Website By<a class="link" href="https://htmlacademy.ru"><img src="img/icon-htmlacademy.svg" width="115" height="41" alt="HTML Acedemy"></a></p>
