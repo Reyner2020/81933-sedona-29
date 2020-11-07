@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Отели в Седоне</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
@@ -32,15 +32,18 @@
               <ul>
                 <li class="filter-checkbox filter-range">
                   <input type="checkbox" name="swimingpool" id="filter-swimingpool" checked>
-                  <label for="filter-swimingpool">Бассейн</label>
+                  <label class="container-ckeckbox" for="filter-swimingpool">Бассейн</label>
+                  <span class="checkmark"></span>
                 </li>
                 <li class="filter-checkbox filter-range">
                   <input type="checkbox" name="parking" id="filter-parking">
                   <label for="filter-parking">Парковка</label>
+                  <span class="checkmark"></span>
                 </li>
                 <li class="filter-checkbox filter-range">
                   <input type="checkbox" name="wi-fi" id="filter-wi-fi">
                   <label for="filter-wi-fi">Wi-Fi</label>
+                  <span class="checkmark"></span>
                 </li>
               </ul>
           </fieldset>
@@ -57,22 +60,28 @@
                 </li>
                 <li class="filter-checkbox filter-range">
                   <input type="checkbox" name="appartament" id="filter-appartament" checked>
-                  <label for="filter-appartament">Аппартаменты</label>
+                  <label for="filter-appartament">Апартаменты</label>
                 </li>
               </ul>
           </fieldset>
           <fieldset>
-            <div class="filter-range">
-            <legend>Стоимость в сутки(Р):</legend>
-            <label>от<input type="text" name="min-price" placeholder="от 0"></label>
-            <label>до<input type="text" name="max-price" placeholder="до 3000"></label>
-            <input type="range" min="0" max="9999" step="10" name="range-price" id="pricecount">
-            <output name="priceoutput"></output>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="price-value">
+              <div class="price">от 0</div>
+              <div class="price-devider"></div>
+              <div class="price">до 3000</div>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button title="Показать результат" type="submit" class="show-button">Показать</button>
           </fieldset>
-          <button type="button">Показать</button>
         </form>
-        </section>
+      </section>
 
       <section class="result-search">
         <article>
@@ -88,51 +97,85 @@
         </article>
         <article class="result-hotels">
           <ul class="result-hotels-list">
-            <li class="result-item">
-              <h3>Amara Resort & Spa</h3>
-              <p class="result-item-image">
+            <li class="hotel-list-item">
+              <div class="hotel-card">
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
-              </p>
-              <p>Гостиница</p>
-              <p>от 4000 Р.</p>
-              <p>Рейтинг: 8,5</p>
-              <p class="result-buttons">
-                <a href="">Подробнее</a>
-                <button type="button">Збронировать</button>
-              </p>
+                <div class="hotel-info">
+                  <a href="#">
+                    <h3>Amara Resort & Spa</h3>
+                  </a>
+                  <div class="type-price">
+                    <p>Гостиница</p>
+                    <p>от 4000 Р.</p>
+                  </div>
+                  <a class="details" href="#">Подробнее</a>
+                  <a class="booking" href="#">Збронировать</a>
+                </div>
+              </div>
+              <div class="hotel-raiting">
+                <div title="3 звезды" class="raiting-star desert-star-count">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+                <p class="raiting">Рейтинг: <span>8,5</span></p>
+              </div>
             </li>
 
-            <li class="result-item">
-              <h3>Desert Quail Inn</h3>
-              <p>
-                <img src="img/hotel-2.jpg" width="135" height="90" alt="Amara Resort & Spa">
-              </p>
-              <p>Мотель</p>
-              <p>от 3000 Р.</p>
-              <p>Рейтинг: 8,9</p>
-              <a href="">Подробнее</a>
-              <button type="button">Збронировать</button>
+            <li class="hotel-list-item">
+              <div class="hotel-card">
+                <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+                <div class="hotel-info">
+                  <a href="#">
+                    <h3>Desert Quail Inn</h3>
+                  </a>
+                  <div class="type-price">
+                    <p>Мотель</p>
+                    <p>от 3000 Р.</p>
+                  </div>
+                  <a class="details" href="#">Подробнее</a>
+                  <a class="booking" href="#">Збронировать</a>
+                </div>
+              </div>
+              <div class="hotel-raiting">
+                <div title="3 звезды" class="raiting-star desert-star-count">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+                <p class="raiting">Рейтинг: <span>8,9</span></p>
+              </div>
             </li>
 
-            <li class="result-item">
-              <h3>Villas at Poco Diablo</h3>
-              <p>
-                <img src="img/hotel-3.jpg" width="135" height="90" alt="Amara Resort & Spa">
-              </p>
-              <p>Аппартаменты</p>
-              <p>от 2000 Р.</p>
-              <p>Рейтинг: 9,2</p>
-              <a href="">Подробнее</a>
-              <button type="button">Збронировать</button>
+            <li class="hotel-list-item">
+              <div class="hotel-card">
+                <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                <div class="hotel-info">
+                  <a href="#">
+                    <h3>Villas at Poco Diablo</h3>
+                  </a>
+                  <div class="type-price">
+                    <p>Аппартаменты</p>
+                    <p>от 2000 Р.</p>
+                  </div>
+                  <a class="details" href="#">Подробнее</a>
+                  <a class="booking" href="#">Збронировать</a>
+                </div>
+              </div>
+              <div class="hotel-raiting">
+                <div title="3 звезды" class="raiting-star desert-star-count">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+                <p class="raiting">Рейтинг: <span>9,2</span></p>
+              </div>
             </li>
           </ul>
         </article>
       </section>
 
-
     </main>
-
-
 
     <footer class="page-footer main-footer">
       <div class="container">

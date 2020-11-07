@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
+  <body class="page-body inner-page">
+    <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -95,30 +96,28 @@
         <h2>Заинтересовались?</h2>
         <p class="search-info">Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <h3>Поиск гостиницы в Седоне</h3>
+        <button class="search-button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="" method="post">
           <p class="search-item">
             <label for="search-date-in">Дата заезда:</label>
-            <input id="search-date-in" type="date" name="date" value="24 апреля 2017">
+            <input id="search-date-in" type="text" name="datein" value="24 апреля 2017">
           </p>
           <p class="search-item">
             <label for="search-date-out">Дата выезда:</label>
-            <input id="search-date-out" type="date" name="date" placeholder="4 июля 2017">
+            <input id="search-date-out" type="text" name="dateout" value="4 июля 2017">
           </p>
           <p class="search-item-people">
             <label for="search-old">Взрослые:</label>
-            <input id="search-old" type="number" name="old" placeholder="2">
+            <input id="search-old" type="text" name="old" value="2">
           </p>
           <p class="search-item-people">
             <label for="search-child">Дети:</label>
-            <input id="search-child" type="number" name="child" placeholder="0">
+            <input id="search-child" type="text" name="child" value="0">
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
       </section>
-      <div class="map">
         <img src="img/map.jpg" width="1199" height="594" alt="Карта поиска гостиниц">
-      </div>
     </main>
     <footer class="page-footer main-footer">
       <div class="container">
@@ -136,5 +135,6 @@
         <p class="footer-copyright">Website By<a class="link" href="https://htmlacademy.ru"><img src="img/icon-htmlacademy.svg" width="115" height="41" alt="HTML Acedemy"></a></p>
       </div>
     </footer>
+  </div>
   </body>
 </html>
